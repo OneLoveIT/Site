@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Async Flask App{% endblock %}</title>
+    <meta name="description" content="A responsive, mobile-friendly, and SEO-optimized web application built with Flask, Celery, and asyncio.">
+    <meta name="keywords" content="Flask, Celery, asyncio, Python, Web Development, SEO, Responsive Design">
+    <meta name="author" content="Your Name or Company">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://yourwebsite.com/">
+    <meta property="og:title" content="Async Flask App with Celery">
+    <meta property="og:description" content="A demonstration of an async Flask web application.">
+    <meta property="og:image" content="{{ url_for('static', filename='images/JPG/hero-image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://yourwebsite.com/">
+    <meta property="twitter:title" content="Async Flask App with Celery">
+    <meta property="twitter:description" content="A demonstration of an async Flask web application.">
+    <meta property="twitter:image" content="{{ url_for('static', filename='images/JPG/hero-image.jpg') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/PNG/favicon.png') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Async Flask App. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='JS/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Async Flask App{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to My Async Flask App</h1>
+    <p>This is a demonstration of a web application built with Flask, Celery, and asyncio.</p>
+    <img src="{{ url_for('static', filename='images/JPG/hero-image.jpg') }}" alt="Hero Image" style="width:100%;max-width:600px;height:auto;">
+</section>
+<section class="features">
+    <div class="feature">
+        <h2>Async Views</h2>
+        <p>Flask routes are handled asynchronously for better performance.</p>
+    </div>
+    <div class="feature">
+        <h2>Background Tasks</h2>
+        <p>Celery is used for running long-running tasks in the background.</p>
+    </div>
+    <div class="feature">
+        <h2>Responsive Design</h2>
+        <p>The application is designed to work on all devices.</p>
+    </div>
+</section>
+{% endblock %}

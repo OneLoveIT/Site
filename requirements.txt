@@ -1,0 +1,6 @@
+Flask[async]>=2.0.0
+celery
+redis
+python-dotenv
+gunicorn
+Werkzeug>=2.0.0
