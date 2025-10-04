@@ -1,3 +1,9 @@
+"""
+This script runs the Flask application.
+
+It creates an instance of the app and then runs it.
+The Flask configuration can be set using the FLASK_CONFIG environment variable.
+"""
 import os
 from app import create_app
 
